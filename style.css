@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 18px;
+    background-color: #e0f7e9;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+                      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 10px 10px;
+    color: #001f3f;
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: #001f3f; /* koyu mavi arkaplan */
+    padding: 20px 0; /* üst-alt 20px boşluk */
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* linkler arasında 40px boşluk */
+}
+
+
+nav a {
+    color: #e0f7e9;
+    text-decoration: none;
+    font-size: 20px; /* eski 14px idi, büyüttük */
+    transition: color 0.3s;
+}
+
+
+nav a:hover {
+    color: #ffad60;
+    text-shadow: 0 0 5px #ffad60, 0 0 10px #ffad60;
+}
+
+
+header {
+    padding: 60px 20px 20px;
+}
+
+h1 {
+    font-size: 36px; /* çok daha büyük ve görünür */
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #001f3f;
+    color: #e0f7e9;
+    border: 2px solid #e0f7e9; /* kenarlık rengini açık yapalım */
+    box-shadow: 4px 4px 0 #001f3f; /* retro gölge efekti */
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: #ffad60;
+    color: #001f3f;
+    box-shadow: 2px 2px 0 #001f3f, 0 0 8px #ffad60;
+    transform: translate(2px, 2px);
+}
+
+
+.button:active {
+    transform: translate(4px, 4px);
+    box-shadow: none; /* tamamen basılmış gibi olsun */
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 2px solid #001f3f;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.project-card:hover {
+    background-color: #d0ebff;
+}
+
+.project-card h3 {
+    font-size: 26px; /* Biraz daha büyük olsun */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Emoji ile yazı arasında boşluk */
+}
+
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    background-color: #001f3f;
+    color: #e0f7e9;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+footer span {
+    color: #ffad60;
+    text-shadow: 0 0 5px #ffad60;
+}
+
+
+#cursor {
+    display: inline-block;
+    color: #ffad60;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001f3f;
+    color: #e0f7e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+#loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loading-cursor {
+    display: inline-block;
+    margin-left: 5px;
+    color: #ffad60;
+    font-weight: bold;
+}
+
