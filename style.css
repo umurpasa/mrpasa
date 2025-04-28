@@ -162,3 +162,48 @@ footer span {
     font-weight: bold;
 }
 
+.small-button {
+    font-size: 16px;
+    padding: 6px 12px;
+    margin: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-mode nav {
+    background-color: #001f3f;
+}
+
+body.dark-mode nav a {
+    color: #f0f0f0;
+}
+
+body.dark-mode .button {
+    background-color: #001f3f;
+    color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+}
+
+body.dark-mode .button:hover {
+    background-color: #ffad60;
+    color: #1a1a1a;
+}
+
+body.dark-mode .project-card {
+    background-color: #001f3f;
+    border-color: #666;
+}
+
+body.dark-mode footer {
+    background-color: #001f3f;
+    color: #f0f0f0;
+}
+
+
